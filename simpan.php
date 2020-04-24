@@ -50,9 +50,9 @@
      $query = "INSERT INTO gambar(nama,ukuran,tipe) VALUES('".$nama_file."','".$ukuran_file."','".$tipe_file."')";
 
      // query SQL untuk insert data
-     $query="INSERT INTO siswa SET nim='$nim',nama='$nama',jurusan='$jurusan',jenis_kelamin='$jenis_kelamin',alamat='$alamat'";
+     $query="INSERT INTO data_siswa SET nomor_pendaftaran='$no_pendaftaran',nomor_tes='$no_tes',jalur_masuk='$jalur_masuk',nama_lengkap='$nama_lengkap',nama_panggilan='$nama_panggilan',jenis_kelamin='$jenis_kelamin',tempat='$tempat',tanggal_lahir='$tanggal_lahir',agama='$agama',cita_cita='$cita_cita',hoby='$hoby',anak_ke='$anak_ke',kandung='$kandung',tiri='$tiri',angkat='$angkat',berat_badan='$berat_badan',tinggi_badan='$tinggi_badan',golongan_darah='$golongan_darah',alamat='$alamat',kelurahan='$kelurahan',kecamatan='$kecamatan',kabupaten_kota='$kabupaten_kota',provinsi='$provinsi',kode_pos='$kode_pos',nomor_telepon='$no_telepon_rumah',email='$email'";
      mysqli_query($koneksi, $query); 
     
     // mengalihkan ke halaman Hasil
-    header("location:#");
+    header("location:hasil.php");
 ?>
